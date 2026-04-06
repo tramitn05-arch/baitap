@@ -1,0 +1,133 @@
+/* Thiết lập chung theo yêu cầu (h) */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 40px 0;
+}
+
+/* Container (Yêu cầu a, b) */
+.form-container {
+    width: 720px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Tiêu đề (Yêu cầu e) */
+.form-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+/* Grid Layout (Yêu cầu d: khoảng cách 16px) */
+.form-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.2fr;
+    gap: 16px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.header-row {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Định dạng chung cho ô nhập (Yêu cầu c) */
+.input-fake, select, .var-box {
+    height: 44px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.input-fake {
+    padding: 0 12px;
+}
+
+select {
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+/* Màu đỏ cho các dấu đặc biệt (Yêu cầu i và dấu ngoặc nhọn) */
+.red-text {
+    color: red;
+    font-weight: bold;
+}
+    
+/* Khu vực Biến lưu giá trị */
+.var-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.var-box {
+    flex: 1;
+    padding-left: 6px;
+}
+
+.chip {
+    background-color: #8e44ad; /* Màu tím */
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.remove-x {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Nút Thêm dòng (Yêu cầu j) */
+.add-row-btn {
+    background: #f9f9f9;
+    border: 1px dashed #999;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+.add-row-btn b {
+    font-size: 18px;
+    margin-right: 4px;
+}
+
+/* Nút Đăng ký (Yêu cầu f, g) */
+.submit-btn {
+    width: 100%;
+    height: 48px;
+    background-color: #2d8cff; /* Màu xanh */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #1a73e8; /* Đổi màu khi di chuột qua */
+}
