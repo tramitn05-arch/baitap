@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao diện Form Khảo sát</title>
+    <link rel="stylesheet" href="menu+giaban.css">
+</head>
+<body>
+
+<div class="form-container">
+    <div class="form-header">
+        MENU + GIÁ BÁN (Link)
+    </div>
+
+    <div class="form-card">
+        <label class="question">1. Link menu +Giá bán <span class="required">*</span></label>
+        <input type="text" class="input-underline" placeholder="Câu trả lời của bạn">
+    </div>
+
+    <div class="form-card">
+        <label class="question">2. Mặt hàng bán chính của Cửa hàng/Quán <span class="required">*</span></label>
+        <select class="form-select">
+            <option value="" disabled selected>Chọn</option>
+            <option value="1">Đồ ăn</option>
+            <option value="2">Đồ uống</option>
+        </select>
+        <div class="error-message">
+            <span class="error-icon">!</span> Đây là một câu hỏi bắt buộc
+        </div>
+    </div>
+
+    <div class="form-card">
+        <label class="question">3. Giờ mở cửa của Nhà hàng/Quán <span class="required">*</span></label>
+        <p class="sub-label">Ví dụ: 07-14 17-22</p>
+        <input type="text" class="input-underline" placeholder="Câu trả lời của bạn">
+    </div>
+
+    <div class="form-card">
+        <label class="question">4. Số lượng đơn hàng mỗi ngày <span class="required">*</span></label>
+        <select class="form-select small-select">
+            <option value="" disabled selected>Chọn</option>
+        </select>
+        <div class="error-message">
+            <span class="error-icon">!</span> Đây là một câu hỏi bắt buộc
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

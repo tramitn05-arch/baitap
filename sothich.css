@@ -1,0 +1,101 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #fff;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+/* Khung bao quanh toàn bộ form */
+.form-container {
+  width: 500px;
+  border: 1px solid #7a95b4; /* Viền xanh xám theo mẫu */
+  padding: 25px;
+  background-color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 6px 5px;
+}
+
+/* Cột nhãn bên trái */
+td:first-child {
+  width: 140px;
+  font-weight: normal;
+}
+
+/* Định dạng các ô input text, password, select */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #7a95b4;
+  padding: 4px;
+  box-sizing: border-box; /* Giúp padding không làm nở chiều rộng */
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+select {
+  width: auto;
+  min-width: 160px;
+  background-color: #f8f8f8;
+}
+
+/* Phần sở thích chia 2 cột đều nhau */
+.hobbies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.hobby-item {
+  display: flex;
+  align-items: center;
+}
+
+.hobby-item label {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Phần nút bấm */
+.buttons {
+  padding-top: 15px;
+}
+
+button {
+  background-color: #f0f0f0;
+  border: 1px solid #7a95b4;
+  padding: 4px 18px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #e2e2e2;
+}
+
+/* Căn chỉnh radio button và label */
+input[type="radio"] {
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+label {
+  margin-right: 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông tin vị trí ứng tuyển</title>
+    <link rel="stylesheet" href="ggform.css" />
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <div class="card header-card">
+        <div class="blue-bar"></div>
+        <h1>Thông tin về vị trí đang ứng tuyển</h1>
+        <p class="description">Description (optional)</p>
+      </div>
+
+      <div class="card question-card">
+        <label class="question-text"
+          >Bạn muốn ứng tuyển vào vị trí: <span class="required">*</span></label
+        >
+        <div class="options-group">
+          <label class="option-item"
+            ><input type="radio" name="position" /> Phục vụ</label
+          >
+          <label class="option-item"
+            ><input type="radio" name="position" /> Đầu bếp</label
+          >
+          <label class="option-item"
+            ><input type="radio" name="position" /> Lễ tân</label
+          >
+        </div>
+      </div>
+
+      <div class="card question-card">
+        <label class="question-text"
+          >Khung thời gian làm việc mong muốn:
+          <span class="required">*</span></label
+        >
+        <div class="options-group">
+          <label class="option-item"
+            ><input type="checkbox" /> Ca sáng, từ 8h đến 13h</label
+          >
+          <label class="option-item"
+            ><input type="checkbox" /> Ca chiều, từ 13h đến 18h</label
+          >
+          <label class="option-item"
+            ><input type="checkbox" /> Ca tối, từ 18h đến 23h</label
+          >
+          <label class="option-item"
+            ><input type="checkbox" /> Ca ghép, từ 10h đến 15h</label
+          >
+        </div>
+      </div>
+
+      <div class="card question-card">
+        <label class="question-text"
+          >Kinh nghiệm của bạn đối với vị trí này:
+          <span class="required">*</span></label
+        >
+        <div class="input-container">
+          <input
+            type="text"
+            placeholder="Long answer text"
+            class="long-answer"
+          />
+        </div>
+      </div>
+
+      <div class="card question-card">
+        <label class="question-text"
+          >Bạn biết đến &lt;&lt;company_name&gt;&gt; qua kênh:
+          <span class="required">*</span></label
+        >
+        <div class="options-group">
+          <label class="option-item"><input type="checkbox" /> Facebook</label>
+          <label class="option-item"><input type="checkbox" /> Google</label>
+          <label class="option-item"><input type="checkbox" /> Other...</label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

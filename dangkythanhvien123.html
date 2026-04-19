@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký thành viên</title>
+    <link rel="stylesheet" href="dangkythanhvien123.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header-bar">
+        <span class="main-title">ĐĂNG KÝ THÀNH VIÊN</span>
+        <span class="note">(*) là thông tin bắt buộc nhập</span>
+        <span class="badge b1">1</span>
+    </div>
+
+    <form class="form-content">
+        <h3 class="section-title">Thông tin tài khoản</h3>
+        <div class="row">
+            <div class="col">
+                <label>Loại tài khoản (*)</label>
+                <select><option>Cá nhân</option></select>
+            </div>
+            <div class="col">
+                <label>ID đăng nhập (*)</label>
+                <input type="text" placeholder="Số CMND/CCCD">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>Mật khẩu (*)</label>
+                <input type="password">
+            </div>
+            <div class="col">
+                <label>Nhập lại mật khẩu (*)</label>
+                <input type="password">
+            </div>
+        </div>
+
+        <h3 class="section-title">Thông tin nhân sự quản lý tài khoản</h3>
+        <div class="row">
+            <div class="col">
+                <label>Họ và tên (*)</label>
+                <input type="text">
+            </div>
+            <div class="col">
+                <label>Điện thoại di động (*)</label>
+                <input type="text" placeholder="vd: 0943xxxxxx">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-30">
+                <label>Ngày sinh</label>
+                <input type="text" placeholder="dd/mm/yyyy">
+            </div>
+            <div class="col col-30">
+                <label>Giới tính</label>
+                <select><option>Nam</option><option>Nữ</option></select>
+            </div>
+            <div class="col col-40">
+                <label>Email</label>
+                <input type="email">
+            </div>
+        </div>
+
+        <div class="captcha-section">
+            <div class="captcha-wrapper">
+                <div class="captcha-box">8969</div>
+                <input type="text" placeholder="Nhập mã xác thực">
+                <span class="badge b2">2</span>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <div class="btn-wrapper">
+                <button type="submit" class="btn-submit">Đăng ký</button>
+                <span class="badge b3">3</span>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

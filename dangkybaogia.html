@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký báo giá</title>
+    <link rel="stylesheet" href="dangkybaogia.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Đăng ký báo giá</h2>
+
+    <div class="checkbox-group">
+        <label><input type="checkbox"> Hiển thị trên máy tính</label>
+        <label><input type="checkbox"> Hiển thị trên điện thoại</label>
+    </div>
+
+    <div class="form-group">
+        <label>Email nhận liên hệ<span class="required">*</span></label>
+        <div class="input-red-border">
+            <input type="email" placeholder="Điền email nhận liên hệ">
+        </div>
+    </div>
+
+    <h3 class="section-title">Kích hoạt popup</h3>
+
+    <div class="form-group">
+        <label>Vào thời điểm</label>
+        <select>
+            <option>Khi chuẩn bị thoát trang</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Hiển thị khi</label>
+        <select>
+            <option>Truy cập tất cả URL</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Chọn màu</label>
+        <div class="color-input-wrapper">
+            <input type="text" value="#ff6600">
+            <div class="color-box"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button class="btn-save">Lưu thay đổi</button>
+        <button class="btn-back">Quay về ban đầu</button>
+    </div>
+</div>
+
+</body>
+</html>

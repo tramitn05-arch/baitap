@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đăng ký du lịch</title>
+    <link rel="stylesheet" href="dangkydulich.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Đăng ký du lịch</h1>
+
+      <table class="form-table">
+        <tr>
+          <td class="label">Họ và tên</td>
+          <td>
+            <input type="text" placeholder="Họ và tên" />
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Địa chỉ</td>
+          <td>
+            <input type="text" placeholder="Địa chỉ" />
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Điện thoại</td>
+          <td><input type="tel" placeholder="Điện thoại" /></td>
+        </tr>
+        <tr>
+          <td class="label">Khách Việt Nam</td>
+          <td><input type="checkbox" checked /></td>
+        </tr>
+        <tr>
+          <td class="label">Chọn tour</td>
+          <td>
+            <select class="input-full">
+              <option>Buôn mê thuột - Gia lai - Kontum</option>
+              <option>Đà Lạt - Thành phố ngàn hoa</option>
+              <option>Vịnh Hạ Long</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Phương tiện</td>
+          <td class="radio-group">
+            <input type="radio" name="transport" id="maybay" />
+            <label for="maybay">Máy bay</label>
+            <input type="radio" name="transport" id="oto" checked />
+            <label for="oto">Xe ô tô</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <fieldset class="guest-count">
+              <legend>Số lượng đoàn khách</legend>
+              <div class="flex-row">
+                <label>Người lớn</label>
+                <input type="text" class="input-mini" />
+                <label>Trẻ em</label>
+                <input type="text" class="input-mini" />
+              </div>
+            </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Ghi chú thêm</td>
+          <td>
+            <textarea rows="3" class="input-full">
+Có 2 trẻ em dưới 6 tuổi&#10;Có 2 người ăn chay</textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="center">
+            <button type="submit">Đồng ý</button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="center success">
+            Bạn đã đăng ký thành công!!!
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

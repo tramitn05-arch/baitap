@@ -1,0 +1,102 @@
+body {
+    background-color: #fdf5e6; /* Màu nền vàng nhạt toàn trang */
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 640px;
+}
+
+/* Thanh tiêu đề vàng đậm ở trên cùng */
+.form-header {
+    background-color: #fbbc04;
+    color: #333;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+    font-size: 16px;
+	margin-bottom: -12px;
+}
+
+/* Các ô thẻ câu hỏi */
+.form-card {
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 12px;
+}
+
+.question {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #202124;
+}
+
+.required {
+    color: #d93025;
+}
+
+.sub-label {
+    font-size: 13px;
+    color: #70757a;
+    margin-bottom: 15px;
+}
+
+/* Ô nhập liệu dạng gạch chân */
+.input-underline {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #dadce0;
+    padding: 8px 0;
+    font-size: 14px;
+    outline: none;
+    transition: border-bottom 0.2s;
+}
+
+.input-underline:focus {
+    border-bottom: 2px solid #fbbc04;
+}
+
+/* Dropdown chọn */
+.form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    background-color: #fafafa;
+    color: #70757a;
+    outline: none;
+}
+
+.small-select {
+    width: 40%; /* Câu 4 ngắn hơn câu 2 */
+}
+
+/* Thông báo lỗi màu đỏ */
+.error-message {
+    color: #d93025;
+    font-size: 12px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.error-icon {
+    border: 1px solid #d93025;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    font-weight: bold;
+    font-size: 10px;
+}

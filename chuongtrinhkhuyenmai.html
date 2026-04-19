@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Phiếu đăng ký khuyến mãi</title>
+    <link rel="stylesheet" href="chuongtrinhkhuyenmai.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+        
+        <table class="form-table">
+            <tr>
+                <td class="label">Họ và tên</td>
+                <td><input type="text" class="input-name"></td>
+            </tr>
+            <tr>
+                <td class="label">Địa chỉ</td>
+                <td><input type="text" class="input-address"></td>
+            </tr>
+            <tr>
+                <td class="label">Điện thoại</td>
+                <td><input type="tel" class="input-phone"></td>
+            </tr>
+            <tr>
+                <td class="label">Phái</td>
+                <td class="radio-group">
+                    <input type="radio" name="gender" id="nam"> <label for="nam">Nam</label>
+                    <input type="radio" name="gender" id="nu" checked> <label for="nu">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Nghề nghiệp</td>
+                <td>
+                    <select class="input-select">
+                        <option>Giáo viên</option>
+                        <option>Kỹ sư</option>
+                        <option>Bác sĩ</option>
+                        <option>Khác</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Chọn sản phẩm tham gia</td>
+                <td>
+                    <select multiple class="input-multi">
+                        <option selected>Kem đánh răng</option>
+                        <option>Bột giặt</option>
+                        <option selected>Dầu gội đầu</option>
+                        <option>Sữa tắm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Số người dự đoán tham gia</td>
+                <td><input type="text" class="input-predict"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center">
+                    <button type="submit">Đồng ý</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center success">
+                    Bạn đã đăng ký thành công!!!
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

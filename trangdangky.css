@@ -1,0 +1,71 @@
+/* Reset cơ bản */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f4f4; padding: 50px; }
+
+/* Khung viền xanh bao quanh toàn bộ bài thi */
+.registration-wrapper {
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #00adef;
+    border-radius: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-title { color: #007bb6; margin-bottom: 5px; }
+.desc { font-size: 13px; color: #007bb6; margin-bottom: 20px; }
+
+/* Chia 3 cột */
+.form-row {
+    display: flex;
+    gap: 30px; /* Khoảng cách giữa các cột */
+}
+
+.form-column {
+    flex: 1; /* Chia đều không gian cho 3 cột */
+}
+
+/* Định dạng từng nhóm input */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block; /* Ép label nằm trên input */
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #007bb6;
+}
+
+.required { color: red; }
+small { font-weight: normal; color: #888; margin-left: 10px; }
+
+/* Ô nhập liệu */
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00adef;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* class viền đỏ theo yêu cầu của bạn */
+.border-red {
+    border: 2px solid red !important;
+    max-width: 100%; /* Bạn có thể đổi thành 200px nếu muốn nó hẹp lại hẳn */
+}
+
+/* Nút bấm */
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn-back { padding: 10px 20px; border: 1px solid #ccc; background: #fff; cursor: pointer; }
+.btn-submit { padding: 10px 30px; background: #007bb6; color: white; border: none; border-radius: 4px; cursor: pointer; }
+.btn-submit:hover { background: #005f8d; }

@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Nền tối để nổi bật popup */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.popup-container {
+    width: 600px;
+    background: #fff;
+    border: 1px solid #ccc; /* Đường viền bao quanh toàn bộ */
+    position: relative;
+}
+
+/* Header */
+.header {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.title {
+    font-weight: bold;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.close-icon {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+/* Nội dung form */
+.form-content {
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+	height: 200px; 
+}
+
+.col {
+    flex: 1;
+}
+
+.input-item {
+    display: flex;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+    height: 40px;
+}
+
+.icon-box {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #eee;
+    color: #333;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    width: 100%;
+    color: #888;
+}
+
+/* Nút bấm */
+.btn-reg {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.btn-close {
+    background-color: #337ab7;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+	margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Footer & Bước 3 */
+.footer {
+    border-top: 1px solid #eee; /* Đường kẻ ngang */
+    padding: 5px 15px; /* Giảm padding dọc từ 15px xuống 5px */
+    height: 40px;      /* Thay height cố định 50px bằng auto để nó tự co lại */
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.step-box {
+    position: absolute;
+    left: 110px; 
+    /* CHỖ CẦN SỬA: Chỉnh bottom thành giá trị âm để nó đè lên viền footer */
+    bottom: 20px; 
+    background: white;
+    border: 1px solid #ccc;
+    padding: 8px 15px; 
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    min-width: 220px;
+    z-index: 10;
+    line-height: 0.8; 
+}
+
+.step-title {
+    color: #b00;
+    font-weight: bold;
+    font-size: 13px;
+    /* Đảm bảo span không tạo thêm khoảng trống thừa */
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+.step-desc {
+    color: #b00;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+}

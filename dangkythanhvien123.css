@@ -1,0 +1,102 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    padding: 40px 10px;
+}
+
+.container {
+    width: 850px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+/* 1. Rút gọn nền xanh tiêu đề */
+.header-bar {
+    background-color: #00569d;
+    color: #fff;
+    padding: 8px 15px;
+    width: fit-content; /* Rút gọn nền */
+    position: relative; 
+    display: flex;
+    align-items: center;
+}
+
+.main-title { font-weight: bold; margin-right: 10px; }
+.note { font-size: 11px; }
+
+/* 2. Căn chỉnh các Badge (Số đỏ) */
+.badge {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-weight: bold;
+    border: 2px solid #fff;
+}
+
+/* Số 1 sát mép phải nền xanh */
+.b1 { right: -10px; top: -10px; }
+
+/* Số 2 sát ô nhập captcha */
+.captcha-wrapper {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    width: fit-content; /* Để khung bọc chỉ rộng bằng captcha + ô nhập */
+}
+
+.b2 { right: -25px; top: 50%; transform: translateY(-50%); }
+
+/* Số 3 sát nút đăng ký */
+.btn-wrapper {
+    position: relative;
+    display: inline-block; /* Để khung bọc chỉ rộng bằng cái nút */
+}
+
+.b3 { right: -25px; top: 50%; transform: translateY(-50%); }
+
+/* Các thành phần khác */
+.section-title {
+    margin: 20px 15px 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.row { display: flex; padding: 0 15px; gap: 15px; margin-bottom: 10px; }
+.col { flex: 1; display: flex; flex-direction: column; }
+.col-30 { flex: 0 0 25%; }
+.col-40 { flex: 1; }
+
+label { font-size: 13px; margin-bottom: 4px; font-weight: bold; }
+input, select { padding: 6px; border: 1px solid #ccc; border-radius: 2px; }
+
+.captcha-section { padding: 10px 15px; }
+.captcha-box {
+    background: linear-gradient(to right, #5495c7, #c156a0);
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.footer-section { padding: 15px; }
+.btn-submit {
+    background-color: #0088cc;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}

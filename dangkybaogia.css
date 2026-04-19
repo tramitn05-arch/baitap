@@ -1,0 +1,136 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    width: 500px;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin: 0 20px 20px;
+    font-size: 1.2rem;
+}
+
+.section-title {
+    margin: 25px 20px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Checkbox alignment */
+.checkbox-group {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 30px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Form Groups */
+.form-group {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.required {
+    color: #d9534f;
+    margin-left: 3px;
+}
+
+/* Email Input with specific red border like the image */
+.input-red-border {
+    border: 2px solid #d9534f;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.input-red-border input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #999;
+}
+
+/* Select boxes with gradient background */
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Color Picker input */
+.color-input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 2px 10px;
+}
+
+.color-input-wrapper input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    background-color: #ff6600;
+    border-radius: 2px;
+}
+
+/* Footer & Buttons */
+.footer {
+    border-top: 1px solid #eee;
+    padding: 15px 20px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-save {
+    background-color: #f06431;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-back {
+    background: none;
+    border: none;
+    color: #f06431;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-save:hover {
+    background-color: #d85628;
+}

@@ -1,0 +1,112 @@
+/* Căn giữa toàn bộ form ra màn hình */
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* SỬA TẠI ĐÂY: Bỏ border đỏ và background ở container ngoài */
+.register-container {
+    width: 500px;
+    height: 750px;
+    border: 1px solid grey;  /* Đường viền bao quanh toàn bộ */
+}
+
+/* THÊM MỚI: Khung viền đỏ chỉ bao quanh form (kết thúc ở Captcha) */
+.register-form {
+    background: #fff;
+    height: 610px;
+    margin: 10px;
+    padding: 20px 20px 3px 20px;
+    border: 2.5px solid red; /* Khung đỏ chuyển vào đây */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.required {
+    color: red;
+}
+
+/* Ô nhập liệu */
+input[type="text"], 
+input[type="password"], 
+input[type="tel"], 
+input[type="email"], 
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%; /* Đảm bảo input không tràn */
+    box-sizing: border-box;
+}
+
+/* Chia 2 cột trên 1 hàng */
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1; /* Chia đều không gian */
+}
+
+.note {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Khung Captcha */
+.captcha-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0 5px 0; /* Bỏ margin-right 180px để không bị lệch */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fafafa;
+    width: fit-content;
+}
+
+.terms {
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    margin-top: 0;
+}
+
+/* SỬA TẠI ĐÂY: Bo góc nút Đăng ký và bỏ viền đỏ */
+.btn-submit {
+    width: 140px;
+    display: block;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #5cb85c;
+    color: white;
+    border: 2px solid red;           
+    border-radius: 10px;    /* Bo góc kiểu oval như mẫu */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #4cae4c;
+}

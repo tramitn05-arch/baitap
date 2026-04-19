@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eee;
+}
+
+/* khung */
+.container {
+    width: 700px;
+    margin: 40px auto;
+    background: #f5f5f5;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+/* tiêu đề đỏ */
+.title {
+    background: #b40000;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* ghi chú */
+.note {
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* input chung */
+input, select {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* hover/focus */
+input:focus, select:focus {
+    border: 1px solid #ff4d4d;
+}
+
+/* chia hàng */
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row input,
+.row select {
+    flex: 1;
+}
+
+/* nút */
+.btn-box {
+    text-align: center;
+}
+
+button {
+    background: #d40000;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a80000;
+}

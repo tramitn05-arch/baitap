@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký Thành Viên</title>
+    <link rel="stylesheet" href="dangkythanhvien.css">
+</head>
+<body>
+
+    <div class="form-frame">
+        <div class="input-row">
+            <label for="username">Username:</label>
+            <input type="text" id="username" class="text-input">
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="text-input">
+        </div>
+
+        <div class="radio-stack">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Other</label>
+        </div>
+
+        <div class="action-row">
+            <select class="membership-select">
+                <option>Thành viên Bạc</option>
+                <option>Thành viên Vàng</option>
+                <option>Thành viên Kim Cương</option>
+            </select>
+
+            <input type="color" value="#000000" class="color-picker">
+
+            <label class="checkbox-label">
+                <input type="checkbox"> Correct
+            </label>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin thanh toán</title>
+    <link rel="stylesheet" href="thongtinthanhtoan.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <div class="column">
+            <h2>THÔNG TIN THANH TOÁN</h2>
+            
+            <div class="form-group">
+                <label>Họ và tên *</label>
+                <input type="text" placeholder="Nhập đầy đủ họ và tên của bạn">
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label>Địa chỉ email *</label>
+                    <input type="email">
+                </div>
+                <div class="form-group">
+                    <label>Số điện thoại *</label>
+                    <input type="tel">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="red-label">Địa chỉ *</label>
+                <input type="text" placeholder="Ví dụ: Số 18 Ngõ 86 Phú Kiều, Bắc Từ Liêm, Hà Nội">
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="create-account">
+                <label for="create-account">Tạo tài khoản mới?</label>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="checkbox-group">
+                <input type="checkbox" id="ship-different" checked>
+                <label for="ship-different" class="red-label-bold">Giao hàng tới địa chỉ khác?</label>
+            </div>
+
+            <div class="form-group">
+                <label>Họ và tên *</label>
+                <input type="text" placeholder="Nhập đầy đủ họ và tên người nhận">
+            </div>
+
+            <div class="form-group">
+                <label>Điện thoại *</label>
+                <input type="tel" placeholder="Số điện thoại người nhận hàng">
+            </div>
+
+            <div class="form-group">
+                <label class="red-label">Địa chỉ *</label>
+                <input type="text" placeholder="Ví dụ: Số 18 Ngõ 86 Phú Kiều, Bắc Từ Liêm, Hà Nội">
+            </div>
+
+            <div class="form-group">
+                <label>Ghi chú đơn hàng</label>
+                <textarea placeholder="Ghi chú về đơn hàng, ví dụ: lưu ý khi giao hàng."></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
